@@ -1,0 +1,68 @@
+@import url("../roboto.css");
+* {
+  margin: 0;
+  border: none;
+  background: none;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+}
+html body {
+  width: 1000px;
+}
+html body .calculator {
+  width: 428px;
+  height: 926px;
+  background-color: black;
+}
+html body .calculator .calculator__section__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px 0px 40px;
+  margin-bottom: 180px;
+}
+html body .calculator .calculator__result {
+  display: flex;
+  width: 100%;
+  font-size: 90px;
+  text-align: right;
+  color: #fff;
+  padding-right: 35px;
+  outline: none;
+}
+html body .calculator .button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+html body .calculator .btn {
+  width: 88px;
+  height: 88px;
+  border: none;
+  background-color: #333333;
+  border-radius: 100%;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+html body .calculator .btn:hover {
+  background-color: rgba(46, 177, 50, 0.6549019608);
+}
+html body .calculator .grey__btn {
+  background-color: #a5a5a5;
+  color: #000000;
+}
+html body .calculator .orange__btn {
+  background-color: #f1a33b;
+}
+html body .calculator .dark__grey-big__btn {
+  width: 190px;
+  border-radius: 352px;
+}/*# sourceMappingURL=style.css.map */
