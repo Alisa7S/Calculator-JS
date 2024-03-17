@@ -1,55 +1,38 @@
+//const body = document.body
 
-const a ="123"
-const bool = true
-const student = {
-     name:"Larisa",
-     surname:"Solovyova",
-     lastname:"Anatolevna",
-     age:"38",
-     Married:"true",
-     children:{
-        name:"Oleg",
-        surname:"Solovyov",
-        lastname:"Olegovich",
-        age:"18",
-        Married:"false",
-     },
-     sayName:()=>{
-        console.log(this.name)
-     }
-}
+//body.style.background ='blue'
+//const arr = [ '123', 23, true,{}]
 
-const result ='6' / '2'
-//console.log('-----------')
-//console.log(typeof String(bool) )
+//const elemCalc = body.childNodes[1]
 
+//console.log(elemCalc.nextSibling.nextSibling)
 
-// 5 * 2
-// 5++ (5+1)
-// ++5 (1+5)
-//let x = -5
-//x = -x
-//x = x - x
-//console.log(x)
+const button = document.querySelector('.button')
+const tablo = document.querySelector('.tablo')
+const numbers = ['0','1','2','3','4','5','6','7','8','9',',']
+const operators = ['AC','+/-','%','*','-','+','=']
 
-//сложение +
-//вычитание -
-//множение  *
-//деление /
-//взятие остатка от деления % console.log( 5 % 2)
-//возведение в степень ** + 
+let num1 = 0
+let num2 = 0
+let operator = ''
 
-console.log("" + 1 + 0 )
-console.log("" - 1 + 0)
-console.log(true + false )
-console.log(6 / "3")
-console.log("2" * "3" )
-console.log(4 + 5 + "px")
-console.log("$" + 4 + 5)
-console.log("4" - 2)
-console.log("4px" - 2)
-console.log("-9" + 5)
-console.log("-9" - 5)
-console.log(null + 1)
-console.log(undefined + 1)
-console.log(" \t \n" - 2)
+//function log(){
+    //console.log('click on button')
+//}
+
+button.addEventListener('click',(event)=>{
+    const context = event.target.innerText
+    //if(context){
+        //console.log(context)
+
+    if(numbers.includes(context)){
+        console.log('число')
+        tablo.value = context
+        num1 = +tablo.value
+
+    }else if (operators.includes(context)){
+        console.log('оператор')
+    }else {
+        console.log('не число и не оператор')
+    }
+})
